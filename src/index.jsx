@@ -1,24 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-function formatName(user){
-    return user.firstName + ' ' + user.lastName;
-};
-
-const user1 = {
-    firstName: 'Mirson',
-    lastName: 'Camadro'
-};
-
-const element = (
-    <h1>
-        Hello, {formatName(user1)}!
-    </h1>
-);
+import App from './App';
 
 ReactDOM.render(
-    element,
+    <App />,
     document.getElementById('root')
-)
+);
 
 
